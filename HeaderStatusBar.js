@@ -20,7 +20,7 @@ function customizeStatusBar(data) {
     }
 }
 
-class HeaderStatusBar extends Component {
+export default class HeaderStatusBar extends Component {
     componentDidMount() {
         customizeStatusBar(this.props);
     }
@@ -68,4 +68,3 @@ class HeaderStatusBar extends Component {
     };
 }
 
-module.exports = HeaderStatusBar;

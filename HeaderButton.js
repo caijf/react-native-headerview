@@ -73,7 +73,7 @@ class HeaderTextButton extends Component{
     }
 }
 
-class HeaderButton extends Component {
+export default class HeaderButton extends Component {
 
     getDefaultIcon(type){
         for(let icon of HeaderDefaultIcon){
@@ -128,8 +128,5 @@ class HeaderButton extends Component {
         style: {}
     }
 }
-
-
-module.exports = HeaderButton;
 
 

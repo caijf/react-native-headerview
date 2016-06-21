@@ -73,7 +73,7 @@ export default class HeaderView extends Component {
         let {statusBar, left, right, center, style, leftStyle, rightStyle} = this.props;
 
         // 设置默认的statusBar的tintColor
-        statusBar.tintColor = statusBar.tintColor || style.backgroundColor || tintColor;
+        statusBar.tintColor = statusBar.tintColor || (style && style.backgroundColor) || tintColor;
 
         return (
 

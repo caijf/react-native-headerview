@@ -50,7 +50,7 @@
 
 
 ### API
-- **style** - (Object, Array) - 最外层样式（如果你想隐藏头部可以设置高度为0）
+- **style** - (Object, Array) - header样式
 - **statusBar** - (Object):
   - **barStyle** - ('light-content' or 'default') - Style of statusBar
   - **hidden** - (Boolean)

@@ -14,7 +14,7 @@ import styles from './HeaderStyle.js';
 
 let NOOP = ()=>{};
 
-class HeaderTitle extends Component {
+export default class HeaderTitle extends Component {
 
     constructor(){
         super();
@@ -150,7 +150,5 @@ class HeaderTitle extends Component {
     }
 }
 
-
-module.exports = HeaderTitle;
 
 
