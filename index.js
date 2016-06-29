@@ -84,7 +84,6 @@ export default class HeaderView extends Component {
                     {this.getElementButton(left, [styles.headerLeft, leftStyle])}
                     
                     <HeaderTitle
-                        style={[styles.headerCenter]} 
                         {...center}
                     />
 
@@ -107,7 +106,8 @@ export default class HeaderView extends Component {
     static defaultProps = {
         statusBar: {
             tintColor: tintColor
-        }
+        },
+        style: {}
     };
 }
 
