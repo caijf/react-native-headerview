@@ -132,10 +132,7 @@ export default class HeaderTitle extends Component {
         hasDropDown: PropTypes.bool,
         hasDropDownTransform: PropTypes.bool,
         defaultDropDownDirection: PropTypes.string,
-        style: PropTypes.oneOfType([
-            PropTypes.object,
-            PropTypes.array,
-        ])
+        style: PropTypes.object
     }
 
     static defaultProps = {

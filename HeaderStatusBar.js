@@ -50,10 +50,7 @@ export default class HeaderStatusBar extends Component {
         barStyle: PropTypes.oneOf(['light-content', 'default', ]),
         hidden: PropTypes.bool,
         tintColor: PropTypes.string,
-        style: PropTypes.oneOfType([
-            PropTypes.object,
-            PropTypes.array
-        ]),
+        style: PropTypes.object,
         hideAnimation: PropTypes.oneOf(['fade', 'slide', 'none', ]),
         showAnimation: PropTypes.oneOf(['fade', 'slide', 'none', ])
     };

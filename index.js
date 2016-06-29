@@ -23,10 +23,7 @@ const TitleShape = {
     hasDropDown: PropTypes.bool,
     hasDropDownTransform: PropTypes.bool,
     defaultDropDownDirection: PropTypes.string,
-    style: PropTypes.oneOfType([
-        PropTypes.object,
-        PropTypes.array,
-    ])
+    style: PropTypes.object
 };
 
 const StatusBarShape = {
@@ -34,7 +31,8 @@ const StatusBarShape = {
     hidden: PropTypes.bool,
     tintColor: PropTypes.string,
     hideAnimation: PropTypes.oneOf(['fade', 'slide', 'none']),
-    showAnimation: PropTypes.oneOf(['fade', 'slide', 'none'])
+    showAnimation: PropTypes.oneOf(['fade', 'slide', 'none']),
+    style: PropTypes.object
 };
 
 export default class HeaderView extends Component {
@@ -101,18 +99,9 @@ export default class HeaderView extends Component {
         left: PropTypes.array,
         right: PropTypes.array,
         center: PropTypes.shape(TitleShape),
-        style: PropTypes.oneOfType([
-            PropTypes.array,
-            PropTypes.object
-        ]),
-        leftStyle: PropTypes.oneOfType([
-            PropTypes.array,
-            PropTypes.object
-        ]),
-        rightStyle: PropTypes.oneOfType([
-            PropTypes.array,
-            PropTypes.object
-        ])
+        style: PropTypes.object,
+        leftStyle: PropTypes.object,
+        rightStyle: PropTypes.object
     };
 
     static defaultProps = {
