@@ -13,7 +13,7 @@ import HeaderStatusBar from './HeaderStatusBar.js';
 import HeaderTitle from './HeaderTitle.js';
 import HeaderButton from './HeaderButton.js';
 
-let tintColor = styles.header.backgroundColor;
+let tintColor = '#099fde';
 
 const TitleShape = {
     view: PropTypes.element,
@@ -74,12 +74,11 @@ export default class HeaderView extends Component {
         statusBar.tintColor = statusBar.tintColor || (style && style.backgroundColor) || tintColor;
 
         return (
-
-            <View style={[styles.headerContainer]}>
+            <View style={[styles.headerContainer, style]}>
                 <HeaderStatusBar
                     {...statusBar}
                 />
-                <View style={[styles.header, style]}>
+                <View style={[styles.header]}>
 
                     {this.getElementButton(left, [styles.headerLeft, leftStyle])}
                     

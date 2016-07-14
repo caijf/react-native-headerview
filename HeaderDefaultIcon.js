@@ -25,7 +25,7 @@ class IconHome extends Component{
     render(){
         return (
             <CropImage
-                source={{uri:'http://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:52,left:0,width:20, height: 20}}}
+                source={{uri:'https://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:52,left:0,width:20, height: 20}}}
 
                 width={240}
                 height={147}
@@ -39,7 +39,7 @@ class IconTel extends Component{
     render(){
         return (
             <CropImage
-                source={{uri:'http://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:23,width:20, height: 20}}}
+                source={{uri:'https://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:23,width:20, height: 20}}}
 
                 width={240}
                 height={147}
@@ -53,7 +53,21 @@ class IconHeart extends Component{
     render(){
         return (
             <CropImage
-                source={{uri:'http://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:71,width:20, height: 20}}}
+                source={{uri:'https://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:71,width:20, height: 20}}}
+
+                width={240}
+                height={147}
+            />
+        )
+    }
+}
+
+// iconview heartFull、loveFull
+class IconHeartFull extends Component{
+    render(){
+        return (
+            <CropImage
+                source={{uri:'https://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:47,width:20, height: 20}}}
 
                 width={240}
                 height={147}
@@ -67,7 +81,7 @@ class IconComment extends Component{
     render(){
         return (
             <CropImage
-                source={{uri:'http://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:97,width:20, height: 20}}}
+                source={{uri:'https://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:97,width:20, height: 20}}}
 
                 width={240}
                 height={147}
@@ -81,7 +95,7 @@ class IconCompass extends Component{
     render(){
         return (
             <CropImage
-                source={{uri:'http://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:123,width:20, height: 20}}}
+                source={{uri:'https://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:123,width:20, height: 20}}}
 
                 width={240}
                 height={147}
@@ -95,7 +109,7 @@ class IconFile extends Component{
     render(){
         return (
             <CropImage
-                source={{uri:'http://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:147,width:20, height: 20}}}
+                source={{uri:'https://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:147,width:20, height: 20}}}
 
                 width={240}
                 height={147}
@@ -114,7 +128,7 @@ class IconShare extends Component{
     render(){
         return (
             <CropImage
-                source={{uri:'http://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:172,width:20, height: 20}}}
+                source={{uri:'https://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:172,width:20, height: 20}}}
 
                 width={240}
                 height={147}
@@ -128,7 +142,7 @@ class IconEmail extends Component{
     render(){
         return (
             <CropImage
-                source={{uri:'http://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:198,width:20, height: 20}}}
+                source={{uri:'https://pic.c-ctrip.com/h5/common/bg-global.png', crop:{top:50,left:198,width:20, height: 20}}}
 
                 width={240}
                 height={147}
@@ -178,10 +192,24 @@ module.exports = [
         }
     },
     {   
+        type: 'heart-full',
+        view: <IconHeartFull />,
+        onPress: function(){
+            alert('click heart full')
+        }
+    },
+    {   
         type: 'love',
         view: <IconHeart />,
         onPress: function(){
             alert('click love')
+        }
+    },
+    {
+        type: 'love-full',
+        view: <IconHeartFull />,
+        onPress: function(){
+            alert('click love full')
         }
     },
     {   

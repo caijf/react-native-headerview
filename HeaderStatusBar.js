@@ -31,7 +31,7 @@ export default class HeaderStatusBar extends Component {
 
     render() {
 
-        const customStatusBarTintColor = this.props.tintColor ? { backgroundColor: this.props.tintColor } : null;
+        let customStatusBarTintColor = this.props.tintColor ? { backgroundColor: this.props.tintColor } : {};
 
         let statusBar = null;
 

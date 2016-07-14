@@ -1,8 +1,12 @@
+import {
+    StyleSheet
+} from 'react-native';
+
 
 const HEADER_HEIGHT = 44;
 const STATUS_BAR_HEIGHT = 20;
 
-module.exports = {
+module.exports = StyleSheet.create({
     // statusBar
     statusBar: {
         height: STATUS_BAR_HEIGHT,
@@ -47,11 +51,13 @@ module.exports = {
     },
     title: {
         color: 'white',
-        fontSize: 18
+        fontSize: 17,
+        fontWeight: '400'
     },
     subTitle: {
         color:'white',
-        fontSize: 12
+        fontSize: 12,
+        marginTop: 3
     },
 
     // header button
@@ -97,5 +103,5 @@ module.exports = {
         width: 8,
         marginLeft: 5
     }
-};
+});
 

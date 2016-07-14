@@ -78,6 +78,7 @@
 - **home** - 回到首页
 - **tel** | **phone** - 拨打电话
 - **heart** | **love** - 爱心 or 收藏
+- **heart-full** | **love-full** - 爱心 or 收藏
 - **comment** - 回复
 - **compass** - 罗盘
 - **file** - 文件
